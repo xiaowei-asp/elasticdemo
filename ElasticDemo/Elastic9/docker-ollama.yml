@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  ollama:
+    image: ollama/ollama:0.13.1  # 推荐用 latest（当前 2025 年 12 月为 0.3.x 系列），或固定 0.3.13
+    container_name: ollama
+    volumes:
+      - ollama:/root/.ollama
+    ports:
+      - "11434:11434"
+    restart: unless-stopped
+
+  open-webui:  # 这里必须与 ollama: 对齐缩进（2 或 4 空格）
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: open-webui  # 可选，加了更易管理
+    ports:
+      - "3000:8080"
+    volumes:
+      - open-webui:/app/backend/data
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434  # 容器间用服务名 ollama 访问
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+volumes:
+  ollama:
+  open-webui:
