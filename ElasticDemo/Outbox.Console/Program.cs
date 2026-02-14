@@ -8,7 +8,7 @@ namespace Outbox
     {
         static void Main(string[] args)
         {
-            TestKafkaPublisher().GetAwaiter().GetResult();
+            //TestKafkaPublisher().GetAwaiter().GetResult();
             TestRabbitPublisher().GetAwaiter().GetResult();
 
             Console.WriteLine("Hello, World!");

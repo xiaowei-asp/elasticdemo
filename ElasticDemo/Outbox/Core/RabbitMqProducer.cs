@@ -41,8 +41,8 @@ public sealed class RabbitMqProducer : IMqProducer, IAsyncDisposable
 
         await _confirmWindow.WaitAsync(ct);
 
-        var localSeq = NextLocalSeq();
-        _pending[localSeq] = msg.Id;
+        //var localSeq = NextLocalSeq();
+        //_pending[localSeq] = msg.Id;
 
 
         var props = new BasicProperties
