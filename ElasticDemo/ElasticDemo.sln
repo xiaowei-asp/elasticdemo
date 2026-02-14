@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.2.32630.192
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElasticDemoApp", "ElasticDemoApp\ElasticDemoApp.csproj", "{6956489D-EFD7-4ECF-96F2-303F0E778D6F}"
 EndProject
@@ -24,6 +24,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outbox", "Outbox\Outbox.csproj", "{3FD585D9-F332-4F0A-9C23-DC3666016E04}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outbox.Console", "Outbox.Console\Outbox.Console.csproj", "{BAAE1732-AA73-40BB-B2D3-59F30EF87499}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AI.Copilot", "AI.Copilot", "{277B583D-F20B-4403-9BEF-A9C31530B90E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Copilot.Core", "AI.Copilot.Core\AI.Copilot.Core.csproj", "{84390689-2B3C-4C90-A2F4-54A6FE579EFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Copilot.Core.Console", "AI.Copilot.Core.Console\AI.Copilot.Core.Console.csproj", "{DC4A838A-E23D-4BD1-AED1-CF6AEB9B9AB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,9 +81,21 @@ Global
 		{BAAE1732-AA73-40BB-B2D3-59F30EF87499}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAAE1732-AA73-40BB-B2D3-59F30EF87499}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAAE1732-AA73-40BB-B2D3-59F30EF87499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84390689-2B3C-4C90-A2F4-54A6FE579EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84390689-2B3C-4C90-A2F4-54A6FE579EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84390689-2B3C-4C90-A2F4-54A6FE579EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84390689-2B3C-4C90-A2F4-54A6FE579EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC4A838A-E23D-4BD1-AED1-CF6AEB9B9AB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC4A838A-E23D-4BD1-AED1-CF6AEB9B9AB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC4A838A-E23D-4BD1-AED1-CF6AEB9B9AB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC4A838A-E23D-4BD1-AED1-CF6AEB9B9AB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84390689-2B3C-4C90-A2F4-54A6FE579EFF} = {277B583D-F20B-4403-9BEF-A9C31530B90E}
+		{DC4A838A-E23D-4BD1-AED1-CF6AEB9B9AB8} = {277B583D-F20B-4403-9BEF-A9C31530B90E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6A88870C-AA2F-4D9B-92E9-EEBFFBB33513}
